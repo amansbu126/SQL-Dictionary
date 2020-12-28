@@ -1,0 +1,2 @@
+--In case your string start with alphabet and end with number like ERT-123
+(select  substring(company_code,patindex('%[0-9]%', company_code),len(company_code)))
